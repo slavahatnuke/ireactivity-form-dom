@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("ireactivity"));
+		module.exports = factory(require("ireactivity/es5"));
 	else if(typeof define === 'function' && define.amd)
-		define(["ireactivity"], factory);
+		define(["ireactivity/es5"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("ireactivity")) : factory(root["ireactivity"]);
+		var a = typeof exports === 'object' ? factory(require("ireactivity/es5")) : factory(root["ireactivity/es5"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {

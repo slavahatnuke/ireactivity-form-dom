@@ -6,7 +6,7 @@ module.exports = {
         libraryTarget: 'umd'
     },
     externals: {
-        'ireactivity': 'ireactivity'
+        'ireactivity': 'ireactivity/es5'
     },
     module: {
         loaders: [
