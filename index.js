@@ -1,4 +1,6 @@
-const {up} = require('ireactivity');
+const ireactivity = require('ireactivity');
+const {up} = ireactivity;
+
 const {get, set} = require('object.gs');
 
 const input = (model, path, next = () => null) => {
@@ -21,7 +23,7 @@ const submit = (next = () => null) => {
     }
 };
 
-module.exports = {
-    input,
-    submit
-};
+module.exports = Object.assign({}, ireactivity, {
+  input,
+  submit
+});
